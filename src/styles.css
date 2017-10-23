@@ -3,12 +3,11 @@ html{
   background: #ccc;
 }
 body {
-    width: 1140px;
-    min-height: 90vh;
+    width: 1140px;    
     /* background: red; */
     padding: 10px;
     margin: 0 auto;
     background: white;
-    overflow: hidden;
+    overflow: scroll;
 
 }

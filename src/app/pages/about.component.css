@@ -2,3 +2,14 @@
   background: yellow;
   color: blue;
 }
+.card-block{
+  width: 1140px;
+  overflow: auto;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  min-height: 80px;
+}
+.card-block-container{
+  overflow: hidden;
+}

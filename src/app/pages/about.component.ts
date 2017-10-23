@@ -27,13 +27,28 @@ export class AboutHomeComponent { }
 
 @Component({
   selector: 'about-item',
+  styleUrls: ['./about.component.css'],
   template: `<h3>
   About Item Id: {{id}}
-  <br>
-  <app-cards style="display:inline-block;width:375px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;border:1px solid #ccc">{{id}}</app-cards>
-  </h3>`
+
+  </h3>
+  <div class="card-block-container">
+  <div class="card-block">
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  </div>
+  <div class="card-block">
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
+  </div>
+  </div>
+  `
 })
 export class AboutItemComponent {
   id: any;

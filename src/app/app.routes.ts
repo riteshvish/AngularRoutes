@@ -12,5 +12,21 @@ export const routes: Routes = [
       { path: '', component: AboutHomeComponent }, // url: about/
       { path: 'item/:id', component: AboutItemComponent }
     ]
+  },
+  {
+    path: 'about2',
+    component: AboutComponent,
+    children: [
+      { path: '', component: AboutHomeComponent }, // url: about/
+      { path: 'item/:id', component: AboutItemComponent }
+    ]
+  },
+  {
+    path: 'about3',
+    component: AboutComponent,
+    children: [
+      { path: '', component: AboutHomeComponent }, // url: about/
+      { path: 'item/:id', component: AboutItemComponent }
+    ]
   }
 ];
