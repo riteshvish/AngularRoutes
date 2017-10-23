@@ -1,5 +1,7 @@
-<p>
-  cards works!
-  <ng-content></ng-content>
-  ad
-</p>
+<div class="" >
+    cards works! {{data | json}}
+    <ng-content></ng-content>
+    <div class="" (click)="increment(data)">
+      CLICK ME
+    </div>
+  </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter,Output,Input } from '@angular/core';
 
 @Component({
   selector: 'app-cards',
@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class CardsComponent implements OnInit {
 
   constructor() { }
-
+  @Input()
+  data:any;
+  @Output()
+  clickcards :EventEmitter<any> = new EventEmitter<any>();
   ngOnInit() {
   }
 
+  increment(data) {
+    this.clickcards.emit(data);
+   }
 }

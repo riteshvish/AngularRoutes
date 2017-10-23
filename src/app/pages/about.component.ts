@@ -33,20 +33,13 @@ export class AboutHomeComponent { }
 
   </h3>
   <div class="card-block-container">
-  <div class="card-block">
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  </div>
-  <div class="card-block">
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc">{{id}}</app-cards>
-  </div>
+    <div class="card-block">
+      <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc"
+      *ngFor="let d of data;let index=index"
+      (clickcards)="clickme($event)"
+      [data]='d'
+      >{{index}}</app-cards>
+    </div>
   </div>
   `
 })
@@ -55,7 +48,10 @@ export class AboutItemComponent {
   paramsSub: any;
 
   constructor(private activatedRoute: ActivatedRoute) { }
-
+  data=[{_id:1},{_id:2},{_id:3},{_id:4},{_id:5},{_id:6},{_id:7},{_id:8},{_id:9},{_id:10},{_id:11},{_id:12}];
+  clickme(data){
+    console.log(data)
+  }
   ngOnInit() {
     this.paramsSub = this.activatedRoute.params.subscribe(params => this.id = parseInt(params['id'], 10));
   }
