@@ -3,11 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-about',
+    styleUrls: ['./about.component.css'],
     template: `
     <h2>About</h2>
-    <a [routerLink]="['/about']">Home</a>
-    <a [routerLink]="['/about/item', 1]">Item 1</a>
-    <a [routerLink]="['/about/item', 2]">Item 2</a>
+    <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  [routerLink]="['/about']">Home</a>
+    <a routerLinkActive="active"   [routerLink]="['/about/item', 1]">Item 1</a>
+    <a routerLinkActive="active"  [routerLink]="['/about/item', 2]">Item 2</a>
     <div class="inner-outlet">
       <router-outlet></router-outlet>
     </div>
