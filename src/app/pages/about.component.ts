@@ -27,7 +27,13 @@ export class AboutHomeComponent { }
 
 @Component({
   selector: 'about-item',
-  template: `<h3>About Item Id: {{id}}</h3>`
+  template: `<h3>
+  About Item Id: {{id}}
+  <br>
+  <app-cards style="display:inline-block;width:375px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;border:1px solid #ccc">{{id}}</app-cards>
+  <app-cards style="display:inline-block;width:375px;border:1px solid #ccc">{{id}}</app-cards>
+  </h3>`
 })
 export class AboutItemComponent {
   id: any;

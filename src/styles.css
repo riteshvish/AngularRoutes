@@ -6,8 +6,9 @@ body {
     width: 1140px;
     min-height: 90vh;
     /* background: red; */
-    padding: 0px;
+    padding: 10px;
     margin: 0 auto;
     background: white;
     overflow: hidden;
+
 }
