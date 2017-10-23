@@ -7,7 +7,7 @@ import { routerTransition } from './../router.animations';
     animations: [routerTransition()],
     host: {'[@routerTransition]': ''},
     template: `
-    <h2>About</h2>
+    <h2 class="impact">About</h2>
     <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  [routerLink]="['/about']">Home</a>
     <a routerLinkActive="active"   [routerLink]="['/about/item', 1]">Item 1</a>
     <a routerLinkActive="active"  [routerLink]="['/about/item', 2]">Item 2</a>
@@ -34,7 +34,7 @@ export class AboutHomeComponent { }
   </h3>
   <div class="card-block-container">
     <div class="card-block">
-      <app-cards style="display:inline-block;width:375px;height:475px;border:1px solid #ccc"
+      <app-cards style="display:inline-block;width:371px;margin-right:10px;height:475px;border:1px solid #ccc"
       *ngFor="let d of data;let index=index"
       (clickcards)="clickme($event)"
       [data]='d'

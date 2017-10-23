@@ -1,9 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'impact';
+  src: url('./assets/fonts/911Fonts.com_ImpactRegular__-_911fonts.com-fonts-4mSI.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 html{
   background: #ccc;
 }
 body {
-    width: 1140px;    
+    width: 1140px;
     /* background: red; */
     padding: 10px;
     margin: 0 auto;
@@ -11,3 +17,11 @@ body {
     overflow: scroll;
 
 }
+.impact {
+  font: normal normal normal 14px/1 impact;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*src/assets/fonts/911Fonts.com_ImpactRegular__-_911fonts.com-fonts-4mSI.ttf*/

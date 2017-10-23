@@ -6,7 +6,6 @@ import { Component, OnInit,EventEmitter,Output,Input } from '@angular/core';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-
   constructor() { }
   @Input()
   data:any;
