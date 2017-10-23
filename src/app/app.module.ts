@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { AppComponent } from './app.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AboutComponent, AboutHomeComponent, AboutItemComponent } from './pages/about.component';
 import { HomeComponent } from './pages/home.component';
@@ -12,7 +13,8 @@ import { HomeComponent } from './pages/home.component';
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   declarations: [
     AboutComponent, AboutHomeComponent, AboutItemComponent,

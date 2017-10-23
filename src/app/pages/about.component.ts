@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
+import { routerTransition } from './../router.animations';
 @Component({
     selector: 'app-about',
     styleUrls: ['./about.component.css'],
+    animations: [routerTransition()],
+    host: {'[@routerTransition]': ''},
     template: `
     <h2>About</h2>
     <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  [routerLink]="['/about']">Home</a>

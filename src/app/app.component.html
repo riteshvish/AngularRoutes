@@ -1,5 +1,6 @@
 <a  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/']">Home</a>
     <a  routerLinkActive="active" [routerLink]="['/about']">About</a>
-    <div class="outer-outlet">
-      <router-outlet></router-outlet>
-    </div>
+     <main [@routerTransition]="getState(o)">
+
+      <router-outlet #o="outlet"></router-outlet>
+    </main>
