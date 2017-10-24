@@ -7,7 +7,7 @@
   margin: 5px;
   float: left!important;
 }
-.menu-block{    
+.menu-block{
     float: right!important;
     margin: 10px;
     margin-top: 55px;
@@ -17,6 +17,7 @@
   padding: 10px !important;;
   text-decoration: none;
   color: #fff;
+  font: normal normal normal 14px/1 customimpact;
 }
 .active{
   color: green;

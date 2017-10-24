@@ -5,6 +5,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'customimpact';
+  src: url('./assets/fonts/911Fonts.com_ImpactRegular__-_911fonts.com-fonts-4mSI.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 html{
   background: #ccc;
 }
