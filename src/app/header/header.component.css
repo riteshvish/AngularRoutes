@@ -1,4 +1,24 @@
+.header{
+  height: 96px;
+  background: #ccc;
+}
+.header-logo{
+  height: 86px;
+  margin: 5px;
+  float: left!important;
+}
+.menu-block{    
+    float: right!important;
+    margin: 10px;
+    margin-top: 55px;
+    padding: 10px;
+}
+.menu-item{
+  padding: 10px !important;;
+  text-decoration: none;
+  color: #fff;
+}
 .active{
-  background: red;
   color: green;
+  padding: 10px;
 }
