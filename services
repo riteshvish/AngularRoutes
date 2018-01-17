@@ -1,0 +1,39 @@
+
+import { Observable } from 'rxjs/Rx';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../environments/environment.prod';
+
+
+@Injectable()
+export class HostingService {
+    baseUrl: string;    
+    constructor(public http : HttpClient){
+        this.baseUrl = environment.apiConfiguration.baseUrl;
+    }    
+    public add(data): Observable<any> {
+        return this.http.post(this.baseUrl+'routes', data)
+    }
+
+}
+
+@Component({
+    providers: [HostingService]
+})
+
+  constructor
+  (
+      public hostingService: HostingService,
+     
+  ) {}
+call  
+
+this.homeService.add(data).subscribe(
+        (response) => {
+            
+        },
+        (error) => {
+            
+        }
+    )
+ }
